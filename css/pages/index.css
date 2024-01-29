@@ -1,0 +1,477 @@
+body,
+h1,
+h2,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+main {
+    position: relative;
+    min-height: 100vh;
+    background: white
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px 0;
+    background-color: #f4f6f8;
+    min-height: 550px;
+}
+
+.info__image {
+    margin-right: 100px;
+}
+
+.info__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 500px;
+    width: 20%;
+}
+
+.info__text__hello {
+    font-size: 24px;
+    color: #333;
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+
+.info__text__name {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.info__text__job-title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #333;
+    opacity: 0.7;
+}
+
+.info__contact {
+    display: flex;
+    width: 100%;
+}
+
+.info__contact__icon {
+    margin: 10px;
+    width: 30px;
+}
+
+.info__contact__icon:hover {
+    color: #3498db;
+}
+
+.wave-bg {
+    display: block;
+    height: 220px;
+    width: 100%;
+    min-width: 600px;
+    transform-origin: top;
+    animation: animateWave 2000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    background-image: url("../../images/wave-bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about {
+    padding: 10px 100px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.title__text {
+    font-weight: 600;
+}
+
+
+.about-me__content {
+    display: flex;
+    justify-content: center;
+}
+
+.about-me__content__text {
+    width: 40%;
+    margin-right: 10px;
+}
+
+.about-me__content__text__name {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.about-me__content__text__description {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #333;
+    opacity: 0.7;
+}
+
+.about-me__content__text__list {
+    margin-top: 10px;
+}
+
+.about-me__content__item {
+    display: flex;
+    margin: 10px 5px 10px 0;
+}
+
+.about-me__content__item__title {
+    width: 100px;
+}
+
+.about-me__content__item__content {
+    font-weight: 600;
+}
+
+.avatar {
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.avatar__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+
+}
+
+.education__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+.education__content__item {
+    width: 60%;
+    margin: 10px 10px 10px 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.education__content__item__content__description {
+    color: #333;
+    opacity: 0.7;
+    font-size: small;
+}
+
+
+.skills__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+.skills__card {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills__content__text {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #333;
+    opacity: 0.7;
+}
+
+.skills__type {
+    margin: 0 40px;
+}
+
+.skills__content__title {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.skills__content__item {
+    width: 200px;
+    margin: 10px 10px 10px 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: small;
+}
+
+.skill__icon {
+    width: 30px;
+}
+
+.experience {
+    padding: 10px 100px;
+}
+
+.project__item {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+.project__item__text {
+    width: 50%;
+}
+
+.project__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.project__title__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.project__title__icon {
+    margin-left: 20px;
+}
+
+.featured-project {
+    color: #3498db;
+    font-size: small;
+    font-weight: 600;
+}
+
+.project__name {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.project__description {
+    width: 80%;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #333;
+    opacity: 0.7;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+}
+
+.project__tech {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.project__tech__item {
+    margin: 0 10px 10px 0;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #f4f6f8;
+    color: #333;
+    opacity: 0.7;
+}
+
+.project__item__image {
+    height: 400px;
+    width: 700px;
+}
+
+.project__image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+}
+
+.other-project {
+    margin-top: 40px;
+}
+
+.other-project__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.repository__card {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    background-color: #fff;
+    padding: 10px 20px;
+    width: 300px;
+    min-height: 350px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.repository__name {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.repository__description {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #333;
+    opacity: 0.7;
+}
+
+.repository__tech {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.repository__tech__item {
+    margin: 0 10px 10px 0;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #f4f6f8;
+    color: #333;
+    opacity: 0.7;
+}
+
+.folder-icon {
+    color: #3498db;
+}
+
+.github-icon {
+    cursor: pointer;
+}
+
+.github-icon:hover {
+    color: #3498db;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section-fade-in {
+    opacity: 0;
+}
+
+.section-fade-in.animate {
+    animation: fadeIn 1s ease-out;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+    .info {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px;
+    }
+
+    .info__text {
+        width: 100%;
+    }
+
+    .about,
+    .skills,
+    .experience {
+        padding: 10px 20px;
+    }
+
+    .about-me__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me__content__text {
+        width: 100%;
+    }
+    .wave-bg{
+        min-width: 0px;
+    }
+
+    .avatar {
+        height: 200px;
+        width: 200px;
+    }
+
+    .timeline{
+        width: 100% !important;
+    }
+    .timeline__card{
+        width: 100% !;
+    }
+
+    .education__content__item {
+        width: 90%;
+    }
+    .project__item{
+        width: 100%;
+    }
+    .project__item__text{
+        width: 100%;
+    }
+    .project__item__image {
+        height: 200px;
+        width: 100%;
+    }
+    .other-project{
+        opacity: 1;
+    }
+}
